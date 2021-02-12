@@ -1,5 +1,5 @@
 {
-  "name": "ddd-starter-kit",
+  "name": "ddd-by-example",
   "version": "1.0.0",
   "description": "Accessible implementation of DDD using Typescript.",
   "main": "index.js",
