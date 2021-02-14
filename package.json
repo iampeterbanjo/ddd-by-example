@@ -3,10 +3,67 @@
   "version": "1.0.0",
   "description": "Accessible implementation of DDD using Typescript.",
   "main": "index.js",
+  "engines": {
+    "node": ">=12.18.1"
+  },
   "scripts": {
+    "build": "run-s build:ts",
+    "build:ts": "tsc --build tsconfig.json",
+    "cm": "run-s lint && git add -A && lint-staged && git cz --no-verify",
+    "format": "prettier --write '{apps,libs}/**/*.{ts,js,json,md}'",
+    "format:check": "prettier --check '{apps,libs}/**/*.{ts,js,json,md}'",
+    "lint": "eslint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:iampeterbanjo/ddd-by-example.git"
+  },
+  "keywords": [
+    "domain driven design",
+    "architecture",
+    "example"
+  ],
+  "author": {
+    "email": "github@iampeterbanjo.com",
+    "name": "Peter Banjo"
+  },
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && run-s validate-commit",
+      "pre-push": "run-s validate-push"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.md": [
+      "prettier --write --loglevel silent"
+    ],
+    "*.{ts,js,json}": [
+      "eslint",
+      "prettier --write --loglevel silent"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.1.1",
+    "commitizen": "^4.2.2",
+    "cz-conventional-changelog": "^3.2.0",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-json": "^2.1.1",
+    "eslint-plugin-node": "^11.1.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5",
+    "typescript": "^4.0.2"
+  }
 }
