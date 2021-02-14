@@ -22,21 +22,24 @@ Folders are organised like this -
 
 ``` shell
 ├── src
-  ├── config
+  ├── setup
   ├── modules
       ├── stores
       ├── orders
   └── shared
       ├── domain
-      ├── infra
+      ├── data
+      ├── network
       └── utils
 ```
 
-- config: system level concerns e.g. enviornment variables.
+- setup: system level concerns e.g. enviornment variables.
 - modules: our application's bounded contexts. In our case they are - stores, orders.
-- shared: features shared by all modules e.g. database, network etc.
+- shared: features shared by all modules e.g. database access, networking etc.
   - domain: DDD requirements like events, value objects etc.
-  - infra: database, models etc.
+  - data: database, models etc.
+  - network: http, graphql etc.
+  - utils: other things etc.
 
 ## Domain storytelling
 
