@@ -10,9 +10,10 @@
     "build": "run-s build:ts",
     "build:ts": "tsc --build tsconfig.json",
     "cm": "run-s lint && git add -A && lint-staged && git cz --no-verify",
-    "format": "prettier --write '{apps,libs}/**/*.{ts,js,json,md}'",
-    "format:check": "prettier --check '{apps,libs}/**/*.{ts,js,json,md}'",
+    "format": "prettier --write '{src,docs}/**/*.{ts,js,json,md}'",
+    "format:check": "prettier --check '{src,docs}/**/*.{ts,js,json,md}'",
     "lint": "eslint",
+    "validate-commit": "run-p lint format:check",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -60,7 +61,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-json": "^2.1.1",
     "eslint-plugin-node": "^11.1.0",
-    "husky": "^4.3.0",
+    "husky": "^4.3.8",
     "lint-staged": "^10.4.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
