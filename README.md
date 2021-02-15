@@ -16,8 +16,9 @@ Folders are organised like this -
 ├── src
   ├── setup
   ├── modules
-      ├── stores
-      ├── orders
+      ├── movie-goers
+      ├── tickets
+      ├── food
   └── shared
       ├── domain
       ├── data
@@ -36,4 +37,4 @@ Folders are organised like this -
 ## Process
 
 1. [Domain storytelling](./docs/domain-storytelling.md)
-2. [Use cases](./docs/use-cases.md)
+2. [Buying tickets](./docs/use-cases.md)

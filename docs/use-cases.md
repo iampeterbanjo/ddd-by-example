@@ -18,3 +18,13 @@ Taking the first use case we can tell this story -
 > Given a movie-goer and a cashier
 > When they buy a ticket
 > Then a TICKET_PURCHASE event is emitted
+
+From our story we can see an event has these properties
+
+- When it happened - Time (Date)
+- What happened - Type (string)
+- Uniqueness - ID (string)
+
+## Aggregates
+
+We can also see that this event happens because of an interaction between the movie-goer and cashier models. Relationships between models is maintained by something called Aggregates. An aggregate [collection of particulars into a whole](https://www.dictionary.com/browse/aggregate) is useful because "we treat them as a unit for the purpose of data changes" and fire events.
