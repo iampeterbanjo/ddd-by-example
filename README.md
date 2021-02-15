@@ -4,23 +4,15 @@ Domain-Driven Design is an approach to software development that centers the dev
 
 ## Goal
 
-This starter kit attempts to implement DDD using Typescript in a way that is accessible - less jargon, more code and including the necessary documentation.
+We'll build a simple implementation of a cinema where movie-goers can watch a movie. This starter kit attempts to implement DDD using Typescript in a way that is accessible - less jargon, more code and including the necessary documentation.
 
 Front-end frameworks are very prescriptive about how project files are organised e.g. nextjs, create-react-app et al. so they do not offer a good learning opportunity for learning DDD. For this, and other reasons, this repo will focus on the back-end.
-
-## Application
-
-A very simple implementation of an e-Commerce store that will cover the following use cases:
-
-- A user viewing a list of products
-- A user adding products to their cart
-- A user creating an order with the product(s) in their cart
 
 ## Layout
 
 Folders are organised like this -
 
-``` shell
+```shell
 ├── src
   ├── setup
   ├── modules
@@ -41,8 +33,6 @@ Folders are organised like this -
   - network: http, graphql etc.
   - utils: other things etc.
 
-## Domain storytelling
+## Process
 
-Show how we came up with bounded contexts via [Domain storytelling](https://domainstorytelling.org/).
-
-TBD
+1. [Domain storytelling](./docs/Domain-storytelling.md)
