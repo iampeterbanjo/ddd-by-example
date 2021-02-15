@@ -1,10 +1,10 @@
 # Domain storytelling
 
-[Domain storytelling](https://domainstorytelling.org/) helps to learn domain language and to reach a shared understanding.
+[Domain storytelling](https://domainstorytelling.org/) helps to build a domain language and reach a shared understanding.
 
 ## Case study: Cinema
 
-Following an example case study, we describe a customer who wants to see a movie at a cinema.
+The diagram below illustrates an example case study from the Domain storytelling website. Through conversations between a domain expert we better understand the domain, in order to describe someone who wants to see a movie at a cinema.
 
 ![Metropolis Cinema, Domain Storytelling](./images/metropolis-1-cinema-coarsegrained.png)
 
