@@ -35,4 +35,5 @@ Folders are organised like this -
 
 ## Process
 
-1. [Domain storytelling](./docs/Domain-storytelling.md)
+1. [Domain storytelling](./docs/domain-storytelling.md)
+2. [Use cases](./docs/use-cases.md)
