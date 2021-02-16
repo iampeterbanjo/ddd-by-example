@@ -37,4 +37,4 @@ Folders are organised like this -
 ## Process
 
 1. [Domain storytelling](./docs/domain-storytelling.md)
-2. [Buying tickets](./docs/use-cases.md)
+2. [Buying tickets](./docs/buying-tickets.md)

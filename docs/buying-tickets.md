@@ -27,4 +27,6 @@ From our story we can see an event has these properties
 
 ## Aggregates
 
-We can also see that this event happens because of an interaction between the movie-goer and cashier models. Relationships between models is maintained by something called Aggregates. An aggregate [collection of particulars into a whole](https://www.dictionary.com/browse/aggregate) is useful because "we treat them as a unit for the purpose of data changes" and fire events.
+We can also see that this event happens because of an interaction between the Movie-goer and Cashier models. Relationships between models is maintained by something called Aggregates. An aggregate, a [collection of particulars into a whole](https://www.dictionary.com/browse/aggregate), is useful because "we treat them as a unit for the purpose of data changes" [Evans] and fire events.
+
+The resulting data change between the Movie-goer and Cashier is a new ticket so the Ticket model is our Aggregate root.
